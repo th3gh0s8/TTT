@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@export var health : int
 @export var damage : int
+@export var health : int
 @export var speed : float
 
 @onready var animation_player := $AnimationPlayer 
@@ -14,7 +14,7 @@ var state = State.IDLE
 
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	
 	handle_input()
 	hanle_movement()
