@@ -2,51 +2,72 @@
 
 Thunder Thunder Thunder
 
-## Overview
+---
 
-TTT is a project forked from [th3gh0s8/TTT](https://github.com/th3gh0s8/TTT). It appears to be a game or application built using the Godot game engine, as indicated by the presence of `project.godot`, `.gd` scripts, scene files, and asset directories. The exact gameplay or application details are not described, but the project structure is typical for a Godot-based project.
+TTT is an open-source game/application project, forked from [th3gh0s8/TTT](https://github.com/th3gh0s8/TTT), and powered by the robust [Godot Engine](https://godotengine.org/). This repository provides a well-structured foundation for Godot-based development, featuring modular scenes, scripts, and assets.
 
-## Features
+---
 
-- Godot Engine project structure
-- Scene and script organization for modular development
-- GPL-3.0 licensed open source project
+## 🚀 Overview
 
-## Project Structure
+TTT leverages the flexibility of the Godot Engine to deliver a highly extensible and maintainable codebase. Whether you are interested in contributing, learning, or forking for your own project, TTT offers a clean starting point.
 
-- `assets/` - Contains game or application assets
-- `scenes/` - Contains Godot scene files
-- `project.godot` - Godot project configuration file
-- `.gitattributes`, `.gitignore` - Git configuration files
-- `icon.svg`, `icon.svg.import` - Project icon and import data
-- `world.gd`, `world.gd.uid` - Godot script and ID file
-- `world.tscn` - Godot scene file
+---
 
-## Getting Started
+## 📂 Project Structure
+
+| Path/Folder    | Purpose                                       |
+|----------------|-----------------------------------------------|
+| `assets/`      | Game/application assets (images, audio, etc.) |
+| `scenes/`      | Godot scene files                             |
+| `project.godot`| Godot project configuration                   |
+| `icon.svg`     | Project icon                                  |
+| `.gitignore`   | Files and folders to be ignored by Git        |
+| `world.gd`     | Godot GDScript source file                    |
+| `world.tscn`   | Godot scene file                              |
+| `LICENSE`      | Project license (GPL-3.0)                     |
+
+---
+
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- [Godot Engine](https://godotengine.org/) (version compatible with `project.godot`)
-- Git (for cloning the repository)
+- **Godot Engine** (compatible with `project.godot`)
+- **Git** (for cloning the repository)
 
-### Build & Run
+### Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/SLRAPTOR/TTT.git
-   cd TTT
-   ```
-2. Open the project in Godot Engine.
-3. Run the project from the Godot Editor.
+```bash
+git clone https://github.com/SLRAPTOR/TTT.git
+cd TTT
+```
 
-## License
+### Running the Project
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
-
-## Authors & Credits
-
-- Original: [th3gh0s8/TTT](https://github.com/th3gh0s8/TTT)
-- [SLRAPTOR](https://github.com/SLRAPTOR) (fork maintainer)
+1. Open the project in your Godot Editor.
+2. Press <kbd>F5</kbd> (or click the **Run** button) to start the project.
 
 ---
-For more information, visit the [GitHub repository](https://github.com/SLRAPTOR/TTT).
+
+## 🤝 Contributing
+
+Contributions, bug reports, and feature requests are welcome! Please fork the repository and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).  
+You are free to use, modify, and distribute this project within the terms of the license.
+
+---
+
+## 👥 Authors & Credits
+
+- **Original Author:** [th3gh0s8/TTT](https://github.com/th3gh0s8/TTT)
+- **Maintainer:** [SLRAPTOR](https://github.com/SLRAPTOR)
+
+---
+
+For more information, please visit the [GitHub repository](https://github.com/th3gh0s8/TTT).
