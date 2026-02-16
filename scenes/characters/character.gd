@@ -52,8 +52,10 @@ func handle_animations() -> void:
 func flip_sprites() -> void:
 	if velocity.x > 0:
 		character_sprite.flip_h = false
+		damage_emitter.scale.x = 1
 	elif velocity.x < 0:
 		character_sprite.flip_h = true
+		damage_emitter.scale.x = -1
 		
 func  can_move() -> bool:
 	return state == State.IDLE or state == State.WALK
@@ -64,5 +66,7 @@ func can_attack() -> bool:
 func on_action_complete() -> void:
 	state = State.IDLE
 
-func on_emit_damage(damage_receiver: Area2D) -> void:
+func on_emit_damage(damage_receiver: DamageRecever) -> void:
+	
+	damage_receiver.damage_received.emit(damage)
 	print(damage_receiver)
