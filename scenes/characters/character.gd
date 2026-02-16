@@ -67,6 +67,6 @@ func on_action_complete() -> void:
 	state = State.IDLE
 
 func on_emit_damage(damage_receiver: DamageRecever) -> void:
-	
-	damage_receiver.damage_received.emit(damage)
+	var direction := Vector2.LEFT if damage_receiver.global_position.x < global_position.x else Vector2.RIGHT
+	damage_receiver.damage_received.emit(damage, direction)
 	print(damage_receiver)
