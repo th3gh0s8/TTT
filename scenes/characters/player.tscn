@@ -121,7 +121,11 @@ shape = SubResource("CapsuleShape2D_76oj4")
 libraries/ = SubResource("AnimationLibrary_dyp2m")
 autoplay = &"idle"
 
-[node name="CollisionShape2D" parent="DamageEmitter" parent_id_path=PackedInt32Array(1511053586) index="0" unique_id=1275938145]
+[node name="DamageEmitter" parent="." index="4" unique_id=1511053586]
+collision_mask = 96
+monitoring = true
+
+[node name="CollisionShape2D" parent="DamageEmitter" index="0" unique_id=1275938145]
 position = Vector2(10, -12)
 shape = SubResource("RectangleShape2D_yewv4")
 

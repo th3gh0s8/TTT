@@ -26,6 +26,7 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_mvosc")
 
 [node name="DamageRecever" parent="." unique_id=1621149901 instance=ExtResource("2_mvosc")]
+collision_layer = 64
 
 [node name="CollisionShape2D" parent="DamageRecever" index="0" unique_id=264288639]
 position = Vector2(0, -15)
