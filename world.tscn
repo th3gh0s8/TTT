@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcpfeobhfkpra"]
+[gd_scene format=3 uid="uid://dcpfeobhfkpra"]
 
 [ext_resource type="PackedScene" uid="uid://1ovj13snlh6s" path="res://scenes/stage/stage.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://bpexq7rlpwief" path="res://world.gd" id="1_tlwt5"]
@@ -8,34 +8,34 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlwt5"]
 size = Vector2(6, 64)
 
-[node name="World" type="Node2D"]
+[node name="World" type="Node2D" unique_id=355637243]
 script = ExtResource("1_tlwt5")
 
-[node name="Stage" parent="." instance=ExtResource("1_f3sb7")]
+[node name="Stage" parent="." unique_id=367060103 instance=ExtResource("1_f3sb7")]
 
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera" type="Camera2D" parent="." unique_id=428613069]
 position = Vector2(50, 32)
 
-[node name="InvisibleWalls" type="Node2D" parent="Camera"]
+[node name="InvisibleWalls" type="Node2D" parent="Camera" unique_id=25858817]
 position = Vector2(-50, -32)
 
-[node name="LeftWall" type="StaticBody2D" parent="Camera/InvisibleWalls"]
+[node name="LeftWall" type="StaticBody2D" parent="Camera/InvisibleWalls" unique_id=96317796]
 position = Vector2(0, 32)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/InvisibleWalls/LeftWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/InvisibleWalls/LeftWall" unique_id=103617144]
 shape = SubResource("RectangleShape2D_tlwt5")
 
-[node name="RightWall" type="StaticBody2D" parent="Camera/InvisibleWalls"]
+[node name="RightWall" type="StaticBody2D" parent="Camera/InvisibleWalls" unique_id=838631983]
 position = Vector2(100, 32)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/InvisibleWalls/RightWall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera/InvisibleWalls/RightWall" unique_id=444941662]
 shape = SubResource("RectangleShape2D_tlwt5")
 
-[node name="ActionsContainer" type="Node2D" parent="."]
+[node name="ActionsContainer" type="Node2D" parent="." unique_id=1638445479]
 y_sort_enabled = true
 
-[node name="Player" parent="ActionsContainer" instance=ExtResource("2_fj7yv")]
+[node name="Player" parent="ActionsContainer" unique_id=334542285 instance=ExtResource("2_fj7yv")]
 position = Vector2(31, 42)
 
-[node name="Barrel" parent="ActionsContainer" instance=ExtResource("4_aqk2v")]
+[node name="Barrel" parent="ActionsContainer" unique_id=581066832 instance=ExtResource("4_aqk2v")]
 position = Vector2(84, 47)
